@@ -9,9 +9,10 @@ cart.forEach((cartItem) =>{
     let matchingProduct;
     products.forEach((product)=> {
         if(product.id=== productId) {
-            matchingProduct = product;
+          matchingProduct = product;
         }
     });
+
 
     cartSummaryHTML+=`
     <div class="cart-item-container">
@@ -96,4 +97,3 @@ cart.forEach((cartItem) =>{
 document.querySelector('.js-order-summary')
   .innerHTML= cartSummaryHTML;
 
-console.log(cartSummaryHTML);
