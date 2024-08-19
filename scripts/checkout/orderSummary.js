@@ -51,7 +51,8 @@ export function renderOrderSummary() {
               <span>
                 Quantity: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
               </span>
-              <span class="update-quantity-link link-primary js-update-link" data-product-id="${matchingProduct.id}">
+              <span class="update-quantity-link link-primary js-update-link" 
+                data-product-id="${matchingProduct.id}">
                 Update
               </span>
               <input class="quantity-input js-quantity-input-${matchingProduct.id}">
@@ -130,8 +131,6 @@ export function renderOrderSummary() {
 
         renderOrderSummary();
         updateCartQuantity();
-
-
         renderPaymentSummary();
       });
     });
